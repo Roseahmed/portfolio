@@ -1,0 +1,27 @@
+.text-left {
+  padding: 20px;
+  background-color: white;
+}
+
+/* .img-fluid {
+  border-radius: 50%;
+} */
+
+.slick-prev:before,
+.slick-next:before {
+  color: black; /* Customize arrow colors */
+}
+
+/* Custom styling for square dots */
+.slick-dots li button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #333; /* Change color as needed */
+  border-radius: 0; /* Remove border-radius to make it square */
+}
+
+.slick-dots li.slick-active button:before {
+  /* background-color: #ef4b4c; Color for the active dot */
+  background-color: #78cc6d;
+}
