@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/landing-page";
 import "./App.css";
 
@@ -6,11 +6,12 @@ function App() {
   // const [count, setCount] = useState(0);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-      </Routes>
-    </BrowserRouter>
+    <LandingPage />
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<LandingPage />} />
+    //   </Routes>
+    // </BrowserRouter>
   );
 }
 
