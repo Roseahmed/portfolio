@@ -7,10 +7,10 @@ dotenv.config();
 export default defineConfig({
   base: "/",
   plugins: [react()],
-  // server: {
-  //   host: process.env.VITE_HOST || "0.0.0.0",
-  //   port: process.env.VITE_PORT || 4010,
-  // },
+  server: {
+    host: process.env.VITE_HOST || "0.0.0.0",
+    port: process.env.VITE_PORT || 4010,
+  },
   // divind the chunk file
   // build: {
   //   rollupOptions: {
