@@ -5,7 +5,7 @@ dotenv.config();
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/portfolio/",
+  base: "/portfolio",
   plugins: [react()],
   // server: {
   //   host: process.env.VITE_HOST || "0.0.0.0",
