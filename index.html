@@ -15,7 +15,6 @@
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <!-- Android Chrome Icons -->
-    <link rel="manifest" href="/manifest.json" />
     <link
       rel="icon"
       type="image/png"
@@ -28,7 +27,7 @@
       sizes="512x512"
       href="/android-chrome-512x512.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Meta data -->
     <meta property="og:title" content="Rose Ahmed - Web Developer Portfolio" />
@@ -61,6 +60,7 @@
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Google tag (gtag.js) -->
+    <!-- Scripts for google analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-PT25T483SD"
@@ -74,6 +74,7 @@
 
       gtag("config", "G-PT25T483SD");
     </script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
