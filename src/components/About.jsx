@@ -7,7 +7,7 @@ const About = () => {
         </div>
         <div className="col-12">
           <p>
-            Innovative and results-driven software engineer with 5+ years of
+            Innovative and results-driven software engineer with 3+ years of
             expertise in the MERN stack. Proven ability to architect, develop,
             and deploy robust web applications, leveraging agile methodologies
             to deliver exceptional results. Proficient at collaborating with
@@ -27,7 +27,7 @@ const About = () => {
               <h5 className="d-inline text-primary">Degree:</h5> MCA
             </div>
             <div className="col-sm-6 py-1">
-              <h5 className="d-inline text-primary">Experience:</h5> 5 Years
+              <h5 className="d-inline text-primary">Experience:</h5> 3 Years
             </div>
             <div className="col-sm-6 py-1">
               <h5 className="d-inline text-primary">Phone:</h5> +91 9706736327

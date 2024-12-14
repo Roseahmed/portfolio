@@ -20,16 +20,12 @@ export default function LandingPage() {
         </div>
         <div className="content">
           <About />
-          {/* Completed */}
-          <Services />
-          <Testimonial />
           <Skills />
-          {/* Completed */}
           <Expericence />
-          {/* Completed */}
           <Portfolio />
+          <Testimonial />
+          <Services />
           <Contact />
-          {/* <Subscribe /> */}
           <Footer />
         </div>
       </div>
