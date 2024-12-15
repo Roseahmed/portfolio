@@ -34,16 +34,16 @@ export default function Profile() {
           />
         </div>
         <div className="d-flex justify-content-center mt-auto mb-3">
-          <a className="mx-2" href={config.linkedin} target="_blank">
+          <a className="mx-2" href={config.linkedin || "/"} target="_blank">
             <i className="fab fa-linkedin-in" />
           </a>
-          <a className="mx-2" href={config.x} target="_blank">
+          <a className="mx-2" href={config.x || "/"} target="_blank">
             <i className="fab fa-x" />
           </a>
-          <a className="mx-2" href={config.facebook} target="_blank">
+          <a className="mx-2" href={config.facebook || "/"} target="_blank">
             <i className="fab fa-facebook-f" />
           </a>
-          <a className="mx-2" href={config.instagram} target="_blank">
+          <a className="mx-2" href={config.instagram || "/"} target="_blank">
             <i className="fab fa-instagram" />
           </a>
           {/* <a className="mx-2" href="#">
@@ -51,7 +51,10 @@ export default function Profile() {
           </a> */}
         </div>
         <div className="d-flex align-items-end justify-content-between">
-          <a href="" className="btn btn-block border-right">
+          <a
+            href={config.resumeDownloadLink || ""}
+            className="btn btn-block border-right"
+          >
             Download CV
           </a>
           <a href="#contact" className="btn btn-block btn-scroll">
