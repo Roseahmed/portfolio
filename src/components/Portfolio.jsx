@@ -1,12 +1,8 @@
 import { useState, useEffect } from "react";
-// import Portfolio1 from "../assets/portfolio-1.jpg";
-// import Portfolio2 from "../assets/portfolio-2.jpg";
-// import Portfolio3 from "../assets/portfolio-3.jpg";
-// import Portfolio4 from "../assets/portfolio-4.jpg";
 
 import Portfolio1 from "../assets/portfolio-1l.png";
 import Portfolio2 from "../assets/portfolio-2l.png";
-import Portfolio3 from "../assets/portfolio-3l.jpeg";
+// import Portfolio3 from "../assets/portfolio-3l.jpeg";
 import Portfolio4 from "../assets/portfolio-4l.jpeg";
 
 import "./Portfolio.css";
@@ -16,6 +12,26 @@ const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const portfolios = [
+    {
+      src: "https://my-imp-docs.s3.ap-south-1.amazonaws.com/flyev_homepage.jpg",
+      category: "development",
+      title: "Fly Ev - EV Scooter Booking Platform",
+      url: "https://flyev.roseahmed.in",
+      description:
+        "A platform to view, book, and manage EV scooter bookings, with integrated user and admin functionalities.",
+      userFeatures: [
+        "User Registration & Login: Secure user signup and login process to access the platform.",
+        "Customer Enquiry Submission: A form to allow users to submit enquiries regarding EV scooters.",
+        "View EV Scooter Details: Users can browse detailed information about available EV scooters, including specifications and pricing.",
+        "Add to Cart & Book: Seamless process for adding EV scooters to the cart and booking them for purchase.",
+        "Online Payment Integration: Secure payment gateway to facilitate online payments for bookings.",
+      ],
+      adminFeatures: [
+        "User Management: Admins can manage user accounts, including registration, profile updates, and access control.",
+        "Enquiry Management: Admins can view and manage customer and dealer enquiries, ensuring quick responses.",
+        "Booking Management & Status Tracking: Admins can manage and track the status of all bookings, from confirmation to completion.",
+      ],
+    },
     {
       src: Portfolio1,
       category: "design",
@@ -32,14 +48,7 @@ const Portfolio = () => {
       description:
         "This B2B flight booking platform empowers businesses to take control of their travel arrangements with ease and efficiency. By providing a user-friendly interface combined with powerful management tools, the platform reduces the time and effort required to book and manage flights, leading to cost savings and improved productivity for corporate clients.",
     },
-    {
-      src: Portfolio3,
-      category: "design",
-      title: "Travel Guide",
-      url: "https://example.com/project3",
-      description:
-        "The Travel Guide Website offers a rich and engaging experience for travelers, providing everything they need to plan and enjoy their trips in one place. By combining detailed guides, user-generated content, and interactive tools, the platform not only inspires but also empowers users to explore the world with confidence.",
-    },
+
     {
       src: Portfolio4,
       category: "development",
@@ -152,13 +161,59 @@ const Portfolio = () => {
             <span className="close" onClick={closePopup}>
               &times;
             </span>
-            <h2>{selectedProject.title}</h2>
-            <img
-              src={selectedProject.src}
-              alt={selectedProject.title}
-              className="img-fluid mb-3"
-            />
+            <h2 style={{ textAlign: "left" }}>{selectedProject.title}</h2>
+            {/* Link on image hover */}
+            <a
+              href={selectedProject.url}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "block",
+                textAlign: "center",
+                marginBottom: "10px",
+              }}
+              title={selectedProject.url} // This will show the URL when the mouse hovers
+            >
+              <img
+                src={selectedProject.src}
+                alt={selectedProject.title}
+                className="img-fluid mb-3"
+              />
+            </a>
             <p className="text-align">{selectedProject.description}</p>
+
+            {selectedProject.userFeatures?.length && (
+              <>
+                <h3 style={{ textAlign: "left" }}>User Features:</h3>
+                <ul
+                  style={{ textAlign: "left" }}
+                  // className="features-list"
+                >
+                  {selectedProject.userFeatures &&
+                    selectedProject.userFeatures.map((feature, index) => (
+                      <li
+                        key={index}
+                        // className="feature-item"
+                      >
+                        {feature}
+                      </li>
+                    ))}
+                </ul>
+              </>
+            )}
+
+            {selectedProject.adminFeatures?.length && (
+              <>
+                <h3 style={{ textAlign: "left" }}>Admin Features:</h3>
+                <ul style={{ textAlign: "left" }}>
+                  {selectedProject.adminFeatures &&
+                    selectedProject.adminFeatures.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                </ul>
+              </>
+            )}
+
             <a
               href={selectedProject.url}
               target="_blank"
