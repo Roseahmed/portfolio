@@ -7,27 +7,20 @@ const About = () => {
         </div>
         <div className="col-12">
           <p>
-            Innovative and results-driven software engineer with 3+ years of
-            expertise in the MERN stack. Proven ability to architect, develop,
-            and deploy robust web applications, leveraging agile methodologies
-            to deliver exceptional results. Proficient at collaborating with
-            cross-functional teams to translate business requirements into
-            scalable software solutions. Passionate about continuous learning
-            and staying abreast of industry trends.
+            Results-driven Software Engineer with 4+ years of experience
+            specializing in high-performance backend architecture and scalable
+            system design. Proven ability to architect and deploy type-safe,
+            multi-tenant web applications utilizing modern ecosystems
+            (TypeScript, Bun, Hono, Drizzle ORM). Proficient at collaborating
+            with cross-functional teams to translate complex business
+            requirements into highly optimized, full-stack SaaS solutions.
           </p>
           <div className="row">
             <div className="col-sm-6 py-1">
               <h5 className="d-inline text-primary">Name:</h5> Rose Ahmed
             </div>
             <div className="col-sm-6 py-1">
-              <h5 className="d-inline text-primary">Birthday:</h5> 15 February
-              1999
-            </div>
-            <div className="col-sm-6 py-1">
-              <h5 className="d-inline text-primary">Degree:</h5> MCA
-            </div>
-            <div className="col-sm-6 py-1">
-              <h5 className="d-inline text-primary">Experience:</h5> 3 Years
+              <h5 className="d-inline text-primary">Experience:</h5> 4+ Years
             </div>
             <div className="col-sm-6 py-1">
               <h5 className="d-inline text-primary">Phone:</h5> +91 9706736327
@@ -37,12 +30,20 @@ const About = () => {
               roseahmed2013@gmail.com
             </div>
             <div className="col-sm-6 py-1">
+              <h5 className="d-inline text-primary">Degree:</h5> MCA
+            </div>
+            <div className="col-sm-6 py-1">
+              <h5 className="d-inline text-primary">Birthday:</h5> 15 February
+              1999
+            </div>
+            <div className="col-sm-6 py-1">
               <h5 className="d-inline text-primary">Address:</h5> BTM Layout,
               Bengaluru, Karnataka, 560076
             </div>
-            <div className="col-sm-6 py-1">
+
+            {/* <div className="col-sm-6 py-1">
               <h5 className="d-inline text-primary">Freelance:</h5> Available
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

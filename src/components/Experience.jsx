@@ -1,26 +1,36 @@
 const expericenceData = [
   {
     position: "Software Engineer",
-    companyName: "TELIBRAHMA SOFTWARE SERVICES LLP",
-    startDate: "May, 2024",
+    companyName: "Mexo Technologies Private Limited",
+    startDate: "Jan, 2026",
     endDate: "Present",
     roles: [
-      "1. Spearheaded the setup and management of large-scale projects, ensuring on-time delivery and adherence to agile methodologies.",
-      "2. Engineered and optimized complex APIs, leading to a 40% increase in system performance.",
-      "3. Seamlessly integrated APIs with React-based frontend applications, driving a 15% improvement in load times.",
+      "1. Architecting a multi-tenant SaaS platform (MES) within a TypeScript monorepo, leveraging Bun, Hono, and Drizzle ORM for ultra-fast, highly optimized API execution and database management.",
+      "2. Enforcing strict end-to-end type safety and robust payload validation by sharing Zod schemas across the full stack, seamlessly bridging backend data models with the frontend interface.",
+      "3. Developing a high-performance React.js (Vite) frontend, integrating TanStack Query for intelligent server-state caching to ensure seamless real-time data visualization across isolated enterprise environments.",
+    ],
+  },
+  {
+    position: "Software Engineer",
+    companyName: "TELIBRAHMA SOFTWARE SERVICES LLP",
+    startDate: "May, 2024",
+    endDate: "Dec, 2025",
+    roles: [
+      "1. Engineered and delivered the initial R&D phase of the MES for industrial clients (Unimech), optimizing complex APIs to drive a 40% increase in system performance.",
+      "2. Developed a full-stack sports academy management system using React, NestJS, and MySQL to streamline the scheduling and administration of publicly available athletic fields.",
+      "3. Transformed Figma UI/UX designs into modular React components, improving frontend development efficiency by 20%",
       "4. Deployed and managed applications on AWS, ensuring high availability, scalability, and optimal performance through automated CI/CD pipelines.",
     ],
   },
   {
-    position: "Senior Software Developer",
+    position: "Software Developer",
     companyName: "Flyerssoft Private Limited",
     startDate: "Jan, 2023",
     endDate: "Jan, 2024",
     roles: [
-      "1. Led the setup and management of key client projects, ensuring a 15% reduction in project launch times.",
-      "2. Developed and improved APIs, enhancing response times by 25% and reducing server load.",
-      "3. Incorporated APIs with React frontend, cutting down the average data fetching time by 30%.",
-      "4. Deployed applications on AWS, ensuring a zero-downtime deployment process and achieving a 99.9% service availability rate.",
+      "1. Led the backend infrastructure development for an ongoing Industrial IoT application, improving API response times by 25% and reducing server load.",
+      "2. Conducted on-site technical troubleshooting at client facilities to diagnose and resolve critical software-to-hardware integration issues in real-world environments.",
+      "3. Incorporated APIs with the React frontend, cutting down the average data fetching time by 30%",
     ],
   },
   {
@@ -29,10 +39,9 @@ const expericenceData = [
     startDate: "May, 2022",
     endDate: "Dec, 2022",
     roles: [
-      "1. Directed the end-to-end setup of software development projects, accelerating the release cycle by 20%.",
-      "2. Designed and enhanced APIs, reducing request-response times by 30%.",
-      "3. Enhanced the efficiency of API integration, enabling real-time data syncing with 99% accuracy.",
-      "4. Deployed AWS applications and resolved 95% of issues pre-release by implementing early error-detection mechanisms.",
+      "1. Architected an internal project management and ticketing platform (similar to Jira) using Node.js, Express, MongoDB, and TypeScript, accelerating the release cycle by 20%.",
+      "2. Directed the end-to-end setup of software development projects, enhancing API integration efficiency to enable real-time data syncing with 99% accuracy.",
+      "3. Deployed applications in AWS (EC2) and resolved 95% of issues pre-release by implementing early error-detection mechanisms.",
     ],
   },
   {
@@ -41,9 +50,8 @@ const expericenceData = [
     startDate: "Jan, 2022",
     endDate: "Apr, 2022",
     roles: [
-      "1. Developed APIs for internal tools and client projects, streamlining workflows and improving process efficiency by 15%.",
-      "2. Conducted API testing with Postman, identifying and resolving issues before production release.",
-      "3. Blended APIs with React frontend, leading to a 20% improvement in load times.",
+      "1. Developed APIs for internal tools and client projects, streamlining workflows and improving process efficiency by 15%, streamlining workflows and improving process efficiency by 15%.",
+      "2. Conducted rigorous testing and bug-fixing on legacy systems using TypeScript and JavaScript to stabilize the existing codebase prior to production releases",
     ],
   },
 ];
@@ -78,54 +86,8 @@ export default function Expericence() {
                     </>
                   ))}
                 </p>
-                {/* <p>{item.roles}</p> */}
               </div>
             ))}
-            {/* <div className="position-relative mb-4">
-              <i
-                className="fa fa-arrow-right text-primary position-absolute"
-                style={{ top: "3px", left: "-24px" }}
-              />
-              <h5 className="mb-1">Web Designer</h5>
-              <p className="mb-2">
-                Soft Company | <small>2000 - 2050</small>
-              </p>
-              <p>
-                Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit
-                amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd
-                sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam
-              </p>
-            </div>
-            <div className="position-relative mb-4">
-              <i
-                className="fa fa-arrow-right text-primary position-absolute"
-                style={{ top: "3px", left: "-24px" }}
-              />
-              <h5 className="mb-1">Web Designer</h5>
-              <p className="mb-2">
-                Soft Company | <small>2000 - 2050</small>
-              </p>
-              <p>
-                Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit
-                amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd
-                sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam
-              </p>
-            </div>
-            <div className="position-relative mb-4">
-              <i
-                className="fa fa-arrow-right text-primary position-absolute"
-                style={{ top: "3px", left: "-24px" }}
-              />
-              <h5 className="mb-1">Web Designer</h5>
-              <p className="mb-2">
-                Soft Company | <small>2000 - 2050</small>
-              </p>
-              <p>
-                Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit
-                amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd
-                sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam
-              </p>
-            </div> */}
           </div>
         </div>
       </div>

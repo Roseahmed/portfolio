@@ -5,9 +5,9 @@ import Contact from "../components/Contact";
 import Expericence from "../components/Experience";
 import Footer from "../components/Footer";
 import Portfolio from "../components/Portfolio";
-import Services from "../components/Services";
+// import Services from "../components/Services";
 // import Subscribe from "../components/Subscribe";
-import Testimonial from "../components/Testimonial";
+// import Testimonial from "../components/Testimonial";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -23,8 +23,8 @@ export default function LandingPage() {
           <Skills />
           <Expericence />
           <Portfolio />
-          <Testimonial />
-          <Services />
+          {/* <Testimonial /> */}
+          {/* <Services /> */}
           <Contact />
           <Footer />
         </div>
