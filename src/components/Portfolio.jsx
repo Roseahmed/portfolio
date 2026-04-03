@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-import Portfolio1 from "../assets/portfolio-1l.png";
+import Portfolio1 from "../assets/portfolio-1l.jpg";
 import Portfolio2 from "../assets/portfolio-2l.png";
-// import Portfolio3 from "../assets/portfolio-3l.jpeg";
+import Portfolio3 from "../assets/portfolio-3l.jpeg";
 import Portfolio4 from "../assets/portfolio-4l.jpeg";
 
 import "./Portfolio.css";
@@ -13,7 +13,8 @@ const Portfolio = () => {
 
   const portfolios = [
     {
-      src: "https://my-imp-docs.s3.ap-south-1.amazonaws.com/flyev_homepage.jpg",
+      // src: "https://my-imp-docs.s3.ap-south-1.amazonaws.com/flyev_homepage.jpg",
+      src: Portfolio3,
       category: "development",
       title: "Fly Ev - EV Scooter Booking Platform",
       url: "https://flyev.roseahmed.in",
@@ -35,10 +36,10 @@ const Portfolio = () => {
     {
       src: Portfolio1,
       category: "design",
-      title: "Education Consultancy",
-      url: "https://www.educonnect.org.in",
+      title: "AskC – Education Consultancy Website",
+      url: "https://www.askc.in/",
       description:
-        "This is a sleek, responsive, and informative static website designed for an education consultancy firm. The website serves as a digital front for the consultancy, providing potential clients with essential information about the services offered, success stories, and the expertise of the consultancy team.",
+        "A sleek, conversion-focused static website for an education consultancy, featuring service showcases, course listings, contact forms, and smooth animations to drive student inquiries.",
     },
     {
       src: Portfolio2,
